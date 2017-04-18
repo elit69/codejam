@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 //https://code.google.com/codejam/contest/351101/dashboard#s=p0
-public class AStoreCredit {
+public class StoreCredit {
 	Integer creditAmount;
 	Integer numberOfItems;
 	ArrayList<Integer> listPrices;
@@ -41,14 +41,14 @@ public class AStoreCredit {
 		Scanner sc = new Scanner(new File("src/main/java/com/lit/codejam/q2010/A/A-large-practice.in"));
 		//Scanner sc = new Scanner(new File("src/main/java/com/lit/codejam/q2010/A/A-small-practice.in"));
 		Integer n = sc.nextInt();
-		List<AStoreCredit> listStoreCredits = new ArrayList<AStoreCredit>();
-		AStoreCredit storeCredit = null; 
+		List<StoreCredit> listStoreCredits = new ArrayList<StoreCredit>();
+		StoreCredit storeCredit = null; 
 		//System.out.println("==========================");
 		Integer j = 1;
 		for (int i = 0; i < (n * 3); i++) {
 			//System.out.println("===="+j);
 			if (j == 1) {
-				storeCredit = new AStoreCredit();
+				storeCredit = new StoreCredit();
 				storeCredit.setCreditAmount(sc.nextInt());
 			} else if ( j == 2 ) {
 				storeCredit.setNumberOfItems(sc.nextInt());	
